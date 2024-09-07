@@ -18,4 +18,13 @@ export default defineConfig({
     sourcemap: !!process.env.TAURI_DEBUG,
   },
   plugins: [vue()],
+
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/main.scss";`
+      }
+    }
+  }
 })
