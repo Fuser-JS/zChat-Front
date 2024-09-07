@@ -1,16 +1,16 @@
-import { createRouter, createMemoryHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../layouts/Home.vue';
+import { createRouter, createMemoryHistory, RouteRecordRaw } from "vue-router";
+import Home from "../layouts/homePage.vue";
 
 const routes: RouteRecordRaw[] = [
-    {
-        path: '/',
-        component: Home
-    }
-]
+  {
+    path: "/",
+    component: Home,
+  },
+];
 
 const router = createRouter({
-    history: createMemoryHistory(),
-    routes
-})
+  history: createMemoryHistory(),
+  routes,
+});
 
 export default router;
