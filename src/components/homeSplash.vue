@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { RouterLink } from "vue-router";
+</script>
+
 <template>
   <div>
     <div class="title">
@@ -9,8 +13,8 @@
       </div>
     </div>
     <div class="choices">
-      <div class="signin"></div>
-      <div class="signup"></div>
+      <div class="signin"><RouterLink to="/signin">Sign in</RouterLink></div>
+      <div class="signup"><RouterLink to="/signup">Sign up</RouterLink></div>
     </div>
   </div>
 </template>
@@ -26,6 +30,11 @@
 
 @media screen and (min-width: 1000px) {
   .title {
+    margin-left: 30%;
+  }
+  .choices {
+    display: flex;
+    gap: 2rem;
     margin-left: 30%;
   }
 }
