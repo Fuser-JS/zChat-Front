@@ -12,7 +12,8 @@
   "dependencies": {
     "@types/node": "^22.5.4",
     "dotenv": "^16.4.5",
-    "vue": "^3.4.37"
+    "vue": "^3.4.37",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.6.1",
