@@ -1,16 +1,26 @@
-import { createRouter, createMemoryHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../layouts/Home.vue';
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import Home from "../layouts/homePage.vue";
+import SignUp from "../layouts/signUp.vue";
+import SignIn from "../layouts/signIn.vue";
 
 const routes: RouteRecordRaw[] = [
-    {
-        path: '/',
-        component: Home
-    }
-]
+  {
+    path: "/",
+    component: Home,
+  },
+  {
+    path: "/signUp",
+    component: SignUp,
+  },
+  {
+    path: "/signIn",
+    component: SignIn,
+  },
+];
 
 const router = createRouter({
-    history: createMemoryHistory(),
-    routes
-})
+  history: createWebHistory(),
+  routes,
+});
 
 export default router;
