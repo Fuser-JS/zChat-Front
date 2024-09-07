@@ -3,7 +3,7 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <div>
+  <div class="splash">
     <div class="title">
       <div class="Main">
         <h1>Zchat</h1>
@@ -26,16 +26,29 @@ import { RouterLink } from "vue-router";
     margin-left: 10%;
     margin-right: 10%;
   }
+  .choices {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .splash {
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-  .title {
-    margin-left: 30%;
+  .splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .choices {
     display: flex;
     gap: 2rem;
-    margin-left: 30%;
   }
 }
 .titleside {
@@ -43,7 +56,28 @@ import { RouterLink } from "vue-router";
   border-radius: 5rem;
 }
 
+.choices > * {
+  border-radius: 2rem;
+}
+
+.choices > * > * {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+
 .title {
   font-size: 3rem;
+}
+
+.signin {
+  color: $cinnabar;
+}
+
+.signup {
+  color: $black;
+  background-color: $cinnabar;
 }
 </style>

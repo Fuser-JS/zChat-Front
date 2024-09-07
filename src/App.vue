@@ -15,4 +15,8 @@ body {
   background-color: $black;
   color: $cinnabar;
 }
+
+a {
+  color: inherit;
+}
 </style>
