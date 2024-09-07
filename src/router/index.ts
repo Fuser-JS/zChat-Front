@@ -1,9 +1,10 @@
 import { createRouter, createMemoryHistory, RouteRecordRaw } from 'vue-router'
+import Home from '../layouts/Home.vue';
 
 const routes: RouteRecordRaw[] = [
     {
         path: '/',
-        component: []
+        component: Home
     }
 ]
 
