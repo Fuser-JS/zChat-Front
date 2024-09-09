@@ -61,10 +61,8 @@ import { RouterLink } from "vue-router";
 }
 
 .choices > * > * {
-  text-decoration: none;
   font-size: 2rem;
   padding: 1rem;
-  display: inline-block;
   text-align: center;
 }
 
