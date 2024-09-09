@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import signInSplash from "../components/signInSplash.vue";
+</script>
+
 <template>
-  <h1>e</h1>
+  <signInSplash />
 </template>
